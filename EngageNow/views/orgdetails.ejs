@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrgDetails</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="smallnav" id="smallnav">
+        <div class="main" id="main">
+          <div class="mainopen" id="mainopen">
+            <div class="violet open" id="violet"></div>
+            <div class="purple open" id="purple"></div>
+            <div class="blue open" id="blue"></div>
+          </div>
+          <div class="childnav" id="childnav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">SignUp/Login</a></li>
+              </ul>
+        </div>
+      </nav>
+      <nav class="bignav">
+        <h1>LocalLink</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="orgevents.html">Add Events</a></li>
+            <li><a href="orgdetails.html">Add Details</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="login.html">SignUp/Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form class="container" action="./orgevents.html">
+            <div class="card" id="card">
+                <div class="front">
+                    <div class="form-container">
+                        <h2>Add Details</h2>
+                        <input type="text" class="form-control" placeholder="Company Name">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                        <select type="text" class="form-control" placeholder="Service">
+                            <option value="Market">Market</option>
+                            <option value="Restaurant">Restaurant</option>
+                            <option value="Education">Education</option>
+                            <option value="Health">Health</option>
+                            <option value="IT">IT</option>
+                            <option value="Fitness">Fitness</option>
+                        </select>
+                        <select type="text" class="form-control" placeholder="Location">
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Nellore">Nellore</option>
+                        </select>
+                        <div class="business-desc bus-desc">
+                            <input type="file" name="image" class="image-button" />
+                            <img src="image_upload.svg" className="img-but" alt="" />
+                            <h4>Upload Image</h4>
+                            </div>
+                        <button type="submit" class="submit-button">Save</button>
+                    </div>
+                </div>
+        </form>
+        <script src="./nav.js"></script>
+    </main>
+</body>
+</html>

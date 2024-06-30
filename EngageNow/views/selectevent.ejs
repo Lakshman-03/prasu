@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Event</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <%- include('partials/nav.ejs') %>
+    <main>
+        <section class="eventcard" id="events">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 1">
+                <h3>Event 1</h3>
+                <h3>Date: 29/06/2024</h3>
+                <h3>Time: 10:00 AM</h3>
+                <h3>Location: XYZ</h3>
+                <div class="submit-buttons">
+                    <button class="submit-button" onclick='alert("Event Registered Successfully")'>Register as a Volunteer</button>
+                    <button class="submit-button" onclick='alert("Event Registered Successfully")'>Register as a Customer</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./nav.js"></script>
+</body>
+</html>

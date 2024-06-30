@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+   <%- include('partials/nav2.ejs') %>
+    <section class="dashboardpar">
+        <div class="dashboard">
+        <div class="dashboard-details">
+            <img src="https://picsum.photos/200/200" alt="profile_pic" class="profile-pic">
+            <div class="details">
+                <% if (locals.data) { %>
+                 <h3>Name: <%= data.name %> </h3>
+                <h3>Email: <%= data.organization_name %></h3>
+                <h3>Phone: <%= data.contact %></h3>
+                <h3>Location: <%= data.location %></h3>
+                <% } %>
+                
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="/nav.js"></script>
+</body>
+</html>

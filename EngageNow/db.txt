@@ -1,0 +1,23 @@
+create table resident(
+id serial primary key,
+name text,
+password text
+)
+create table organization(
+id serial primary key,
+name text,
+password text,
+organization_name text,
+contact varchar(13),
+location text,
+img text
+)
+
+CREATE TABLE events (
+    id SERIAL PRIMARY KEY,
+    event_name VARCHAR(255) NOT NULL,
+    event_date DATE NOT NULL,
+    event_time VARCHAR(100),
+    event_location VARCHAR(255),
+    event_description TEXT
+);

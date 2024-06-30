@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .formcont {
+          color: white;
+          gap: 20px;
+        }
+    
+        .newcard {
+          width: 850px;
+          height: 650px;
+          line-height: 1.3;
+        }
+    
+        .newcard h2,
+        h1 {
+          margin: 5px;
+        }
+      </style>
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+    <h1>about</h1>
+    <div class="container" action="./events.html">
+        <div class="card newcard" id="card">
+          <div class="front">
+            <div class="form-container formcont">
+              <h1>About LocalLink</h1><br>
+  
+              LocalLink is your one-stop platform for connecting with your city government and community. We believe in
+              empowering residents with the tools they need to stay informed, engaged, and contribute to a better city for
+              all.
+  
+              <br>
+              <h2>Our Mission:</h2><br>
+  
+              * Foster a more transparent and responsive government.<br>
+              * Streamline access to city services and resources.<br>
+              * Empower residents to participate and improve their community.<br><br>
+  
+              <h2>What We Offer:</h2><br>
+  
+              * Issue Reporting: Easily report neighborhood concerns like potholes, graffiti, or streetlights outages
+              directly to the city for prompt attention. Track the status of your reports and see how the city is
+              addressing them.
+              * City Services: Access a comprehensive directory of city services, departments, and contact information.
+              Schedule appointments, download forms, and find answers to frequently asked questions – all in one place.
+              * **Real-Time Data: Stay informed with real-time data dashboards showcasing city operations. View traffic
+              updates, public transit schedules, and environmental data like air quality or park availability.
+              <h1>Join the movement!</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

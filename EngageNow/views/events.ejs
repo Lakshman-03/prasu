@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+   </head>
+<body>
+    <%- include('partials/nav.ejs') %>
+    <section>
+        <div id='calendar'></div>
+    </section>
+    <div class="regevents"><a href="./regevents.html"><button>Go to Registered Events</button></a></div>
+    <section class="events" id="events">
+        <a href="./selectevent.html" class="event" data-date="2024-06-29">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 1">
+                <h3>Event 1</h3>
+                <h3>Date: 29/06/2024</h3>
+                <h3>Time: 10:00 AM</h3>
+                <h3>Location: XYZ</h3>
+            </div>
+        </a>
+        <a href="./selectevent.html" class="event" data-date="2024-06-29">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 1">
+                <h3>Event 1</h3>
+                <h3>Date: 29/06/2024</h3>
+                <h3>Time: 10:00 AM</h3>
+                <h3>Location: XYZ</h3>
+            </div>
+        </a>
+        <a href="./selectevent.html" class="event" data-date="2024-06-30">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 2">
+                <h3>Event 2</h3>
+                <h3>Date: 30/06/2024</h3>
+                <h3>Time: 11:00 AM</h3>
+                <h3>Location: ABC</h3>
+            </div>
+        </a>
+        <a href="./selectevent.html" class="event" data-date="2024-06-30">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 2">
+                <h3>Event 2</h3>
+                <h3>Date: 30/06/2024</h3>
+                <h3>Time: 11:00 AM</h3>
+                <h3>Location: ABC</h3>
+            </div>
+        </a>
+        <a href="./selectevent.html" class="event" data-date="2024-07-01">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 3">
+                <h3>Event 3</h3>
+                <h3>Date: 01/07/2024</h3>
+                <h3>Time: 12:00 PM</h3>
+                <h3>Location: PQR</h3>
+            </div>
+        </a>
+        <a href="./selectevent.html" class="event" data-date="2024-07-01">
+            <div class="event-details">
+                <img src="https://picsum.photos/200/200" alt="Event 3">
+                <h3>Event 3</h3>
+                <h3>Date: 01/07/2024</h3>
+                <h3>Time: 12:00 PM</h3>
+                <h3>Location: PQR</h3>
+            </div>
+        </a>
+    </section>
+    <script src="/scripts/nav.js"></script>
+    <script src="/scripts/calender.js"></script>
+</body>
+</html>

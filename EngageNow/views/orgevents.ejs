@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrgEvents</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <%- include('partials/nav2.ejs') %>
+    <main>
+        <form class="container" action="/add-events" method="post">
+            <div class="card" id="card">
+                <div class="front">
+                    <div class="form-container">
+                        <h2>Add Events</h2>
+                        <input type="text" class="form-control" placeholder="Event Name">
+                        <input type="date" class="form-control" placeholder="Event Date">
+                        <input type="text" class="form-control" placeholder="Event Time">
+                        <input type="text" class="form-control" placeholder="Event Location">
+                        <input type="text" class="form-control" placeholder="Event Description">
+                        <button type="submit" class="submit-button">Add</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="/nav.js"></script>
+</body>
+</html>
